@@ -18,3 +18,8 @@
   description: Full size header op de home
   #folder: home/fullsizeafbeelding
   permalink: /fullsize
+
+- name: Mozaiek
+  description: Mozaiek
+  #folder: home/fullsizeafbeelding
+  permalink: /mozaiek
