@@ -4,22 +4,22 @@
 - name: Full size slider
   description: Full size slider voor de home
   # folder: pages/
-  permalink: slider 
+  permalink:  /home
   # fa-icon: icon-info
 
 - name: Styleguide
   description: Stijlgids voor de Huistijlgids
   # folder: pages/stijlgids
-  permalink: stijlgids
+  permalink: /stijlgids
   # fa-icon: icon-info
 
 
 - name: Full size afbeelding
   description: Full size header op de home
   #folder: home/fullsizeafbeelding
-  permalink: fullsize
+  permalink: /fullsize
 
 - name: Mozaiek
   description: Mozaiek
   #folder: home/fullsizeafbeelding
-  permalink: mozaiek
+  permalink: /mozaiek
