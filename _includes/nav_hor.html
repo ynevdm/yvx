@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="slider.html">yvx</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            {%- for nav-item in site.data.navigation %}
+        
+            {%- capture item_classes %}{% if page.url contains nav-item.permalink %}active{% endif %}{% endcapture %}
+            {%- if nav-item.folder %}
+                <li class="nav-item dropdown {{ item_classes }}">
+                        <a class="nav-link dropdown-toggle" href="{{ nav-item.permalink | relative_url }}" id="navbarDropdown" title="{{ nav-item.name }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            {{ nav-item.name }}
+                        </a>
+                        {%- include navigation-from-folder.html nav-item=nav-item %}
+                </li>
+            {%- else %}
+            <li class="nav-item {{ item_classes }}">
+                    <a class="nav-link" href="{{ nav-item.permalink | relative_url }}" title="{{ nav-item.name }}">
+                        {{ nav-item.name }}
+                    </a>
+            </li>
+            {%- endif %}
+
+        {%- endfor %}
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
