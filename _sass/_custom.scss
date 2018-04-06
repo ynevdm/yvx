@@ -86,20 +86,20 @@ a:active, a:hover {
 }
 
 .carousel1 {
-  background-image: url('./image1.jpg')
+  background-image: url($baseurl + "/images/image1.jpg")
 }
 
 .carousel2 {
-  background-image: url('./image2.jpg')
+  background-image: url($baseurl + "/images/image2.jpg")
 }
 
 .carousel3 {
-  background-image: url('./image3.jpg')
+  background-image: url($baseurl + "/images/image3.jpg")
 }
 
 .fullsizeafbeelding {
   height: 100vh;
-  background: url('./image1.jpg') no-repeat center center fixed;
+  background: url($baseurl + "/images/image1.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
