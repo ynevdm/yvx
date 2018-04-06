@@ -86,15 +86,15 @@ a:active, a:hover {
 }
 
 .carousel1 {
-  background-image: url("{{ site.baseurl }}/images/image1.jpg")
+  background-image: url("{{site.baseurl}}/images/image1.jpg")
 }
 
 .carousel2 {
-  background-image: url("{{ site.baseurl }}/images/image2.jpg")
+  background-image: url("{{site.baseurl}}/images/image2.jpg")
 }
 
 .carousel3 {
-  background-image: url("{{ site.baseurl }}/images/image3.jpg")
+  background-image: url("{{site.baseurl}}/images/image3.jpg")
 }
 
 .fullsizeafbeelding {
