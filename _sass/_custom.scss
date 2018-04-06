@@ -192,6 +192,26 @@ img::-moz-selection {
   background: transparent;
 }
 
+/* FULL SIZE BG */
+
+.fullwidth {
+  height: 500px;
+  margin-top: 10px;
+}
+
+.bg-image-full {
+  background-image: url('image1.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+
+/*MEDIA QUERY */
 @media (min-width: 768px) {
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
     font-size: 16px;
