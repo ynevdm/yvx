@@ -210,6 +210,26 @@ img::-moz-selection {
   -o-background-size: cover;
 }
 
+/* SCROLLNAV */
+
+.headerscrollnav {
+  height: 500px;
+ padding-top: 150px;
+  background-image: url('image1.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+
+}
+
+.scrollnavinhoud {
+  padding: 250px 0 250px 0;
+}
+
 
 /*MEDIA QUERY */
 @media (min-width: 768px) {
