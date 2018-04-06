@@ -66,6 +66,10 @@ footer {
 
 /* OWN */
 
+.welkome {
+  margin-top: 400px;
+}
+
 .carousel-item {
   height: 100vh;
   min-height: 300px;
@@ -86,20 +90,20 @@ a:active, a:hover {
 }
 
 .carousel1 {
-  background-image: url('./images/image1.jpg')
+  background-image: url('image1.jpg')
 }
 
 .carousel2 {
-  background-image: url('./images/image2.jpg')
+  background-image: url('image2.jpg')
 }
 
 .carousel3 {
-  background-image: url('./images/image3.jpg')
+  background-image: url('image3.jpg')
 }
 
 .fullsizeafbeelding {
   height: 100vh;
-  background: url('./images/image1.jpg'); 
+  background: url('image1.jpg'); 
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -111,6 +115,11 @@ a:active, a:hover {
 
 h1 {
 color: $clientcolor-1;
+}
+
+/*HALFCAROUSEL*/
+.halfcarousel {
+  height: 65vh;
 }
 
 /*MOZAIEK*/

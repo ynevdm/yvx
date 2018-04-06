@@ -4,9 +4,7 @@
 
 # Site settings
 # ─────────────
-url: http://yvx.be
-baseurl: 
-# the subpath of your site, e.g. /blog
+baseurl:  # the subpath of your site, e.g. /blog
 # host   : 127.0.0.1
 # port   : 4000
 

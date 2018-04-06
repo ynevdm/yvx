@@ -1,8 +1,8 @@
 # functie uitschakelen met '#'
 # dubbele spatie voor de criteria behouden
 
-- name: Full size slider
-  description: Full size slider voor de home
+- name: Homepage
+  description: homepage
   # folder: pages/
   permalink:  /home
   # fa-icon: icon-info
@@ -13,13 +13,7 @@
   permalink: /stijlgids
   # fa-icon: icon-info
 
-
-- name: Full size afbeelding
-  description: Full size header op de home
-  #folder: home/fullsizeafbeelding
-  permalink: /fullsize
-
-- name: Mozaiek
-  description: Mozaiek
-  #folder: home/fullsizeafbeelding
-  permalink: /mozaiek
+- name: Modules
+  description: Modules
+  folder: pages/modules
+  permalink: /modules
