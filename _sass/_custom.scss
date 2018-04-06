@@ -85,6 +85,18 @@ a:active, a:hover {
   background-color: $clientcolor-1;
 }
 
+.carousel1 {
+  background-image: url('./image1.jpg')
+}
+
+.carousel2 {
+  background-image: url('./image2.jpg')
+}
+
+.carousel3 {
+  background-image: url('./image3.jpg')
+}
+
 .fullsizeafbeelding {
   height: 100vh;
   background: url('./image1.jpg') no-repeat center center fixed;
