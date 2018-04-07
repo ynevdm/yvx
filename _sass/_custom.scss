@@ -350,17 +350,30 @@ form {
   margin-top: 50px;
 }
 
+.form-group input[type="email"]:focus, .form-group textarea:focus {
+  border-bottom: 4px solid $clientcolor-2;
+}
+
 .form-control {
   border:none;
-  background-color: transparent;
-  border-bottom: 4px solid $clientcolor-2;
+  background: transparent;
+  display:block;
   box-shadow: none;
   outline: none;
+  transition: .3s all;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: initial;
+  transition-delay: initial;
 }
 
 .form-control:active {
   background-color: transparent;
+  border: none;
+  outline: none;
 }
+
+
 
 /*BUTTONS*/
 
