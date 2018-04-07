@@ -18,10 +18,9 @@
  
 }
 
-.nav-link:active, .nav-link:hover {
-  border-bottom: 3px solid $clientcolor-2;
+.navbar-nav > li:focus, .navbar-nav > li:hover {
+  border-bottom: 4px solid $clientcolor-2;
   padding-bottom: 5px;
-  
 }
 
 /* FOOTER
@@ -265,6 +264,7 @@ img::-moz-selection {
   top: 0;
   bottom: 0;
   z-index: 1;
+ 
 }
 
 .sidebar-nav {
@@ -276,9 +276,7 @@ img::-moz-selection {
   padding: 0;
 }
 
-.navbar a {
-  border: none;
-}
+
 
 #logo {
   width: 100%;
@@ -339,6 +337,8 @@ img::-moz-selection {
   .navbar {
     position: fixed;
     padding-top: 0;
+    border-right: 1px dotted $color-grey-1;
+    
   }
   .navbar-expand-md .navbar-nav .nav-link {
     padding: 0.7rem 50px 0.7rem 35px;
@@ -350,12 +350,16 @@ img::-moz-selection {
     padding: 0 0 0 15px;
     margin-right: 0;
   }
+  
 }
 
 @media (max-width: 768px) {
   #navlogo {
     margin-left: auto;
     margin-right: auto;
+  }
+  .navbar {
+    border-bottom: 1px dotted $color-grey-1;
   }
 }
 
@@ -466,3 +470,76 @@ footer a, footer a:active, footer a:focus, footer a:hover {
   margin: 0 5px 0 5px;
 }
 
+/*SKILLS*/
+
+.vaardigheden {
+  
+  #ill {
+    width:75%;  
+    animation:ill 3s ease-in-out;
+  }
+  #ind {
+    width:70%;  
+    animation:ind 3s ease-in-out;
+  }
+  #ps {
+    width:65%;  
+    animation:ps 3s ease-in-out;
+  }
+  #html {
+    width:50%;  
+    animation:html 3s ease-in-out;
+  }
+  #js{
+    width:10%;  
+    animation:js 3s ease-in-out;
+  }
+  
+  @keyframes ill { 
+    0%  { width:0px;} 
+    100%{ width:75%;}  
+  }
+  @keyframes ind {
+    0%  { width:0px;} 
+    100%{ width:70%;}  
+  }
+  @keyframes ps {
+    0%  { width:0px;}
+    100%{ width:65%;}
+  }
+  @keyframes html {
+    0%  { width:0px;} 
+    100%{ width:50%;}  
+  }
+  @keyframes js {
+    0%  { width:0px;} 
+    100%{ width:15%;}  
+  }
+
+  .skills-block {
+    h4 {
+      font-weight: 600;
+      
+    }
+    margin-bottom: 50px;
+  }
+  .skills-list {
+    margin-top: 70px;
+  }
+  .percentage-container {
+    margin-top: 20px;
+    width: 100%;
+    height: 7px;
+    background-color: #f1f1f1;
+    &.no-width {
+      .percentage {
+        width: 0 !important;
+      }
+    }
+    .percentage {
+      height: 100%;
+      background: linear-gradient(62deg, $clientcolor-1, $mycolor-1, $clientcolor-2);
+      transition: width 5s ease-in-out;
+    }
+  }
+}
