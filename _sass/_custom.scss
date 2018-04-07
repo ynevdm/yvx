@@ -329,7 +329,12 @@ img::-moz-selection {
   }
 }
 
-
+@media (max-width: 768px) {
+  #navlogo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 /* TUSSENTITEL */
 
