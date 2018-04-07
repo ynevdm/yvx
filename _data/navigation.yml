@@ -11,6 +11,11 @@
   #folder: pages/modules
   permalink: /portfolio
   
+- name: Resume
+  description: Resume
+  #folder: pages/modules
+  permalink: /resume
+
 - name: Contact
   description: Contact
   #folder: pages/modules

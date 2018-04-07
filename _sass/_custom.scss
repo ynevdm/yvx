@@ -63,8 +63,16 @@ footer {
 h2 {
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 4em;
+  font-size: 3em;
+  
+}
+
+#resume h2 {
   text-align: center;
+}
+
+#hello {
+  height: 100vh;
 }
 
 /* BACK TO TOP
@@ -364,9 +372,9 @@ form {
 }
 
 .form-control {
-  border:none;
-  background: transparent;
-  display:block;
+  border: none;
+  background: none;
+  display: block;
   box-shadow: none;
   outline: none;
   transition: .3s all;
@@ -376,14 +384,24 @@ form {
   transition-delay: initial;
 }
 
-.form-control:active {
+.form-control:active, .form-control:focus, .form-control:visited, textarea:focus, input[type="email"]:focus {
   background-color: transparent;
   border: none;
   outline: none;
+  text-decoration: none;
+  background: none;
+  outline-width: 0;
+  border-width: 0;
+  border-color: transparent;
 }
 
+section#contact .container textarea {
+  outline: none;
+}
 
-
+*:focus {
+  outline: none;
+}
 /*BUTTONS*/
 
 .buttonsubmit {
@@ -410,11 +428,11 @@ form {
   opacity: 0;
   top: 0;
   right: -20px;
-  transition: 0.5s;
+  
 }
 
 .buttonsubmit:hover span {
-  padding-right: 25px;
+  padding-right: 190px;
   }
 
   .buttonsubmit:hover span:after {
@@ -447,3 +465,4 @@ footer a, footer a:active, footer a:focus, footer a:hover {
   color: $clientcolor-2;
   margin: 0 5px 0 5px;
 }
+
