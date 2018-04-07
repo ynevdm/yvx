@@ -1,10 +1,10 @@
 # functie uitschakelen met '#'
 # dubbele spatie voor de criteria behouden
 
-- name: Hallo
-  description: Hallo
+- name: Hello
+  description: Hello
   #folder: pages/modules
-  permalink: /hallo
+  permalink: /hello
 
 - name: Portfolio
   description: Portfolio
