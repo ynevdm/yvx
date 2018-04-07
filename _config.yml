@@ -10,7 +10,7 @@ baseurl:  # the subpath of your site, e.g. /blog
 
 # Custom Site variables
 # ─────────────────────
-title: yvx portfolio
+title: Aline A Designs
 
 # Build settings
 # ──────────────
@@ -19,7 +19,7 @@ defaults:
 #    scope:
 #      path: "style-guide"
     values:
-      layout: vertical
+      layout: horizontal
 
 exclude:
   - Gemfile

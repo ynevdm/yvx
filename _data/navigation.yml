@@ -1,13 +1,17 @@
 # functie uitschakelen met '#'
 # dubbele spatie voor de criteria behouden
 
-- name: Homepage
-  description: homepage
-  # folder: pages/
-  permalink:  /home
-  # fa-icon: icon-info
+- name: Hallo
+  description: Hallo
+  #folder: pages/modules
+  permalink: /hallo
 
-- name: Modules
-  description: Modules
-  folder: pages/modules
-  permalink: /modules
+- name: Portfolio
+  description: Portfolio
+  #folder: pages/modules
+  permalink: /portfolio
+  
+- name: Contact
+  description: Contact
+  #folder: pages/modules
+  permalink: /contact

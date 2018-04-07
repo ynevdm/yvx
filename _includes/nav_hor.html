@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="/home">yvx</a>
+      <a class="navbar-brand" href="/">s</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" 
       aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -12,14 +12,15 @@
             {%- capture item_classes %}{% if page.url contains nav-item.permalink %}active{% endif %}{% endcapture %}
             {%- if nav-item.folder %}
                 <li class="nav-item dropdown {{ item_classes }}">
-                        <a class="nav-link dropdown-toggle js-scroll-trigger" href="{{ nav-item.permalink | relative_url }}" id="navbarDropdown" title="{{ nav-item.name }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    
+                        <a class="nav-link dropdown-toggle js-scroll-trigger" href="#{{ nav-item.name }}" id="navbarDropdown" title="{{ nav-item.name }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             {{ nav-item.name }}
                         </a>
                         {%- include navigation-from-folder.html nav-item=nav-item %}
                 </li>
             {%- else %}
             <li class="nav-item {{ item_classes }}">
-                    <a class="nav-link js-scroll-trigger" href="{{ nav-item.permalink | relative_url }}" title="{{ nav-item.name }}">
+                    <a class="nav-link js-scroll-trigger" href="#{{ nav-item.name }}" title="{{ nav-item.name }}">
                         {{ nav-item.name }}
                     </a>
             </li>

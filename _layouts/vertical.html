@@ -3,23 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>{{ page.title }} | Jekyll modules</title>
+    <title>{{ page.title }} | yvx</title>
     <!-- stylesheets -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.css">
     <link rel="stylesheet" href="{{ site.baseurl }}{% link assets/css/app.scss %}">
+    <link rel="icon" href="{{ 'assets/favicon/favicon.ico' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ 'assets/favicon/apple-touch-icon.png' | relative_url }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ 'assets/favicon/favicon-32x32.png' | relative_url }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ 'assets/favicon/favicon-16x16.png' | relative_url }}">
+<link rel="manifest" href="{{ 'assets/favicon/site.webmanifest' | relative_url }}">
+<link rel="mask-icon" href="{{ 'assets/favicon/safari-pinned-tab.svg' | relative_url }}" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#000000">
 </head>
 <body data-spy="scroll" data-target="#toc">  
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-12 col-md-3 col-lg-2">
+        <div class="col-12 col-md-6 col-lg-1 sidebar-nav">
             {% include nav_ver_c.html %}
         </div>
-        <div class="col-12 col-md-3 col-lg-2 order-md-12 pt-5">
-            <nav id="toc" data-toggle="toc"></nav>
-        </div>
-        <main class="col-12 col-md-6 col-lg-8 order-md-1 pt-5">
+       
+        <main class="col-12 col-md-6 col-lg-11 order-md-1 mainbox">
             {{ content }}
         </main>
     </div>

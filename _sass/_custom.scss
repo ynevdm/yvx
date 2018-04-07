@@ -1,24 +1,35 @@
 /* Navigation
 ---------------------------------------------
 */
+
 .navbar a {
-    border: none;
+  border: none;
 }
+
+.navbar {
+  background-color: #000;
+}
+
+#mainNavigation .navbar-nav .nav-item .nav-link.active, #mainNavigation .navbar-nav .nav-item .nav-link:hover {
+  color: $clientcolor-2;
+}
+
+
 
 /* FOOTER
 ----------------------------------------------
 sticked to the bottom with small content pages
 */
+
 html {
-    height: 100%;
-  }
+  height: 100%;
+}
 
 body {
-    position: relative;
-    margin: 0;
-    padding-bottom: 6rem;
-    min-height: 100%;
-  }
+  position: relative;
+  margin: 0;
+  min-height: 100%;
+}
 
 .bh-absolute-bottom {
   position: absolute;
@@ -28,41 +39,56 @@ body {
 }
 
 footer {
-    background-color: $clientcolor-1;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0 20px 0;
+  background-color: $clientcolor-1;
+  color: $color-white;
+  a {
     color: $color-white;
-    a {
-        color: $color-white;
-        &:hover {
-            
-        }
-    }
+    &:hover {}
+  }
 }
 
 /* BACK TO TOP
 -------------------------
 */
+
 #to-top {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color:$clientcolor-1; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: $clientcolor-1;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
   //padding: 15px; /* Some padding */
   width: 40px;
   height: 40px;
-  border-radius: 20px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+  border-radius: 20px;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
   &:hover {
-    background-color:$clientcolor-2; 
+    background-color: $clientcolor-2;
     color: $clientcolor-1;
   }
 }
-
 
 /* OWN */
 
@@ -80,7 +106,8 @@ footer {
   background-size: cover;
 }
 
-a:active, a:hover {
+a:active,
+a:hover {
   color: $clientcolor-2;
   background-color: $clientcolor-1;
 }
@@ -103,7 +130,7 @@ a:active, a:hover {
 
 .fullsizeafbeelding {
   height: 100vh;
-  background: url('image1.jpg'); 
+  background: url('image1.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -114,10 +141,11 @@ a:active, a:hover {
 }
 
 h1 {
-color: $clientcolor-1;
+  color: $clientcolor-1;
 }
 
 /*HALFCAROUSEL*/
+
 .halfcarousel {
   height: 65vh;
 }
@@ -144,7 +172,7 @@ color: $clientcolor-1;
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(255,232,64,0.8);
+  background: rgba(255,230,68, 0.8);
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
@@ -194,6 +222,42 @@ img::-moz-selection {
 
 /* FULL SIZE BG */
 
+#navlogo {
+  background-image: url('logo.svg');
+}
+
+.nav-logo {
+  min-height: 150px;
+  width: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navbar {
+  padding-left: 0;
+  padding-right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.sidebar-nav {
+  padding: 0;
+  background-color: $clientcolor-1;
+}
+
+.mainbox {
+  padding: 0;
+}
+
+.navbar a {
+  border: none;
+}
+
+#logo {
+  width: 100%;
+}
+
 .fullwidth {
   height: 500px;
   margin-top: 10px;
@@ -214,7 +278,7 @@ img::-moz-selection {
 
 .headerscrollnav {
   height: 500px;
- padding-top: 150px;
+  padding-top: 150px;
   background-image: url('image1.jpg');
   background-position: center center;
   background-repeat: no-repeat;
@@ -223,15 +287,22 @@ img::-moz-selection {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-
 }
 
 .scrollnavinhoud {
   padding: 250px 0 250px 0;
 }
 
+#Contact {
+  padding: 125px 0 250px 0;
+}
 
-/*MEDIA QUERY */
+
+
+/* ---------------------------------------------------
+    MEDIA QUERIES
+----------------------------------------------------- */
+
 @media (min-width: 768px) {
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
     font-size: 16px;
@@ -239,6 +310,34 @@ img::-moz-selection {
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     font-size: 22px;
   }
+  .navbar {
+    position: fixed;
+    padding-top: 0;
+  }
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding: 0.7rem 50px 0.7rem 35px;
+  }
+  .dropdown-item {
+    padding: 0.2rem 25px 0.2rem 55px;
+  }
+  .navbar-brand {
+    padding: 0 0 0 15px;
+    margin-right: 0;
+  }
 }
 
 
+
+/* TUSSENTITEL */
+
+.tussentitel {
+  display: table;
+  width: 100%;
+  height: 400px;
+  color: #fff;
+  background: url('/image3.jpg') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}

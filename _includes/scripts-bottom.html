@@ -10,3 +10,72 @@ crossorigin="anonymous" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aA
 <script src="{{ site.baseurl }}/assets/scripts/scrolling-nav.js"></script>
 <script src="{{ site.baseurl }}/assets/scripts/jquery.easing.min.js"></script>
 <script src="{{ site.baseurl }}/assets/scripts/jquery.min.js"></script>
+<script src="{{ site.baseurl }}/assets/scripts/contact_me.js"></script>
+<script>
+$('#mainNavigation a').on('click', function() {
+
+    var scrollAnchor = $(this).attr('data-scroll'),
+        scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - 28;
+
+    $('body.html').animate({
+        scrollTop: scrollPoint
+    }, 500);
+
+    return false;
+
+})
+
+
+$(window).scroll(function() {
+    var windscroll = $(window).scrollTop();
+    if (windscroll >= 100) {
+        $('#mainNavigation').addClass('fixed');
+        $('.wrapper section').each(function(i) {
+            if ($(this).position().top <= windscroll - 20) {
+                $('#mainNavigation a.active').removeClass('active');
+                $('#mainNavigation a').eq(i).addClass('active');
+            }
+        });
+
+    } else {
+
+        $('#mainNavigation').removeClass('fixed');
+        $('#mainNavigation a.active').removeClass('active');
+        $('#mainNavigationnav a:first').addClass('active');
+    }
+
+}).scroll();
+</script>
+    
+<script>
+    // Closes the sidebar menu
+$("#menu-close").click(function(e) {
+  e.preventDefault();
+  $("#sidebar-wrapper").toggleClass("active");
+});
+
+// Opens the sidebar menu
+$("#menu-toggle").click(function(e) {
+  e.preventDefault();
+  $("#sidebar-wrapper").toggleClass("active");
+});
+
+// Scrolls to the selected menu item on the page
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
+</script>
+
