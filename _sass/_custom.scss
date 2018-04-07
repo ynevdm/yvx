@@ -58,6 +58,12 @@ footer {
     &:hover {}
   }
 }
+h1 {
+  text-transform: uppercase;
+  
+}
+
+
 
 h2 {
   font-weight: bold;
@@ -167,6 +173,14 @@ a:hover {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+}
+
+.fullsizeafbeelding {
+  h1 {
+   color: $color-white;
+  }
+  text-align: right;
+  padding-bottom: 50px;
 }
 
 h1 {
@@ -365,7 +379,16 @@ img::-moz-selection {
   .navbar {
     border-bottom: 1px dotted $color-grey-1;
   }
+
+  .fullsizeafbeelding {
+    h1 {
+     color: $color-white;
+    }
+    text-align: center;
+    bottom: 20px;
+  }
 }
+
 
 /* TUSSENTITEL */
 
