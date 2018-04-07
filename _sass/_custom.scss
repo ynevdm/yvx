@@ -377,7 +377,7 @@ form {
 
 /*BUTTONS*/
 
-button {
+.buttonsubmit {
   color: $clientcolor-1;
   background-color: $clientcolor-2;
   border-radius: 20px;
@@ -388,14 +388,14 @@ button {
   margin: 5px;
 }
 
-button span {
+.buttonsubmit span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-button span:after {
+.buttonsubmit span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -404,17 +404,16 @@ button span:after {
   transition: 0.5s;
 }
 
-button:hover span {
+.buttonsubmit:hover span {
   padding-right: 25px;
   }
 
-button:hover span:after {
+  .buttonsubmit:hover span:after {
   opacity: 1;
   right: 0;
 
 }
-
-button:hover {
+.buttonsubmit:hover {
   color: $clientcolor-2;
   background-color: $clientcolor-1;
 }
@@ -430,4 +429,8 @@ button:hover {
 
 textarea {
   height: 150px;
+}
+
+section {
+  height: 100vh;
 }
