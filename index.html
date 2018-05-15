@@ -1,87 +1,969 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
+
 <head>
-	<title>Coming Soon 2</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>yvx | fresh graphic design talent</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="{{ 'assets/favicon/favicon.ico' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ 'assets/favicon/apple-touch-icon.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ 'assets/favicon/favicon-32x32.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ 'assets/favicon/favicon-16x16.png' | relative_url }}">
+    <link rel="manifest" href="{{ 'assets/favicon/site.webmanifest' | relative_url }}">
+    <link rel="mask-icon" href="{{ 'assets/favicon/safari-pinned-tab.svg' | relative_url }}" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#000000">
+
 </head>
-<body>
-	
-	<!--  -->
-	<div class="simpleslide100">
-		<div class="simpleslide100-item bg-img1" style="background-image: url('images/bg01.jpg');"></div>
-		<div class="simpleslide100-item bg-img1" style="background-image: url('images/bg02.jpg');"></div>
-	</div>
 
-	<div class="size1 overlay1">
-		<!--  -->
-		<div class="size1 flex-col-c-m p-l-15 p-r-15 p-t-50 p-b-50">
-			<h3 class="l1-txt1 txt-center p-b-25">
-				Coming Soon
-			</h3>
+<body id="top">
 
-			<p class="m2-txt1 txt-center p-b-48">
-				Website komt er snel aan, sit tight!
-			</p>
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
 
-			
-		</div>
-	</div>
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="images/logo.svg" alt="Homepage">
+            </a>
+        </div>
+        <!-- end header-logo -->
+
+        <nav class="header-nav">
+
+            <a href="#0" class="header-nav__close" title="close">
+                <span>Close</span>
+            </a>
+
+            <div class="header-nav__content">
+                <h3>yvx design</h3>
+
+                <ul class="header-nav__list">
+                    <li class="current">
+                        <a class="smoothscroll" href="#home" title="home">Home</a>
+                    </li>
+                    <li>
+                        <a class="smoothscroll" href="#about" title="about">About</a>
+                    </li>
+                    <li>
+                        <a class="smoothscroll" href="#portfolio" title="portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="smoothscroll" href="#works" title="works">Resume</a>
+                    </li>
+                    <li>
+                        <a class="smoothscroll" href="#contact" title="contact">Contact</a>
+                    </li>
+                </ul>
+
+                <ul class="header-nav__social">
+                    <li>
+                        <a href="https://www.facebook.com/yvx.be">
+                            <i class="icons fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/ynevdm/">
+                            <i class="icons fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/yvx_be"> 
+                            <i class="icons fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.behance.net/yvx_be">
+                            <i class="icons fab fa-behance"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://dribbble.com/yvx_be">
+                            <i class="icons fab fa-dribbble"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- end header-nav__content -->
+
+        </nav>
+        <!-- end header-nav -->
+
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-icon"></span>
+        </a>
+
+    </header>
+    <!-- end s-header -->
 
 
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000
+        data-natural-height=2000 data-position-y=top>
 
-	
+        <div class="shadow-overlay"></div>
 
-<!--===============================================================================================-->	
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/countdowntime/moment.min.js"></script>
-	<script src="vendor/countdowntime/moment-timezone.min.js"></script>
-	<script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-	<script>
-		$('.cd100').countdown100({
-			/*Set Endtime here*/
-			/*Endtime must be > current time*/
-			endtimeYear: 0,
-			endtimeMonth: 0,
-			endtimeDate: 35,
-			endtimeHours: 18,
-			endtimeMinutes: 0,
-			endtimeSeconds: 0,
-			timeZone: "" 
-			// ex:  timeZone: "America/New_York"
-			//go to " http://momentjs.com/timezone/ " to get timezone
-		});
-	</script>
-<!--===============================================================================================-->
-	<script src="vendor/tilt/tilt.jquery.min.js"></script>
-	<script >
-		$('.js-tilt').tilt({
-			scale: 1.1
-		})
-	</script>
-<!--===============================================================================================-->
-	<script src="js/main.js"></script>
+        <div class="home-content">
+
+            <div class="row home-content__main">
+                <h1>
+                    Hi there! I'm Yne.
+                </h1>
+
+                <p>
+                   I may be your next graphic designer. Who knows?<br>
+                   Get to know me, check out my work and let me know if you're interested
+                   in meeting up. Let's see what we can do for each other!
+                </p>
+            </div>
+            <!-- end home-content__main -->
+
+        </div>
+        <!-- end home-content -->
+
+        <ul class="home-sidelinks">
+            <li>
+                <a class="smoothscroll" href="#about">About
+                    <span>Get to know me</span>
+                </a>
+            </li>
+            <li>
+                <a class="smoothscroll" href="#portfolio">Portfolio
+                    <span>Check out my work</span>
+                </a>
+            </li>
+            <li>
+                <a class="smoothscroll" href="#contact">Contact
+                    <span>Get in touch</span>
+                </a>
+            </li>
+        </ul>
+        <!-- end home-sidelinks -->
+
+        <ul class="home-social">
+            <li class="home-social-title">Get in touch</li>
+            <li>
+                <a href="https://www.facebook.com/yvx.be">
+                    <i class="icons fab fa-facebook"></i>
+                    <span class="home-social-text">Facebook</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/yvx_be">
+                    <i class="icons fab fa-instagram"></i>
+                    <span class="home-social-text">Instagram</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/ynevdm/">
+                    <i class="icons fab fa-linkedin"></i>
+                    <span class="home-social-text">LinkedIn</span>
+                </a>
+            </li>
+        </ul>
+        <!-- end home-social -->
+
+        <a href="#about" class="home-scroll smoothscroll">
+            <span class="home-scroll__text">Scroll Down</span>
+            <span class="home-scroll__icon"></span>
+        </a>
+        <!-- end home-scroll -->
+
+    </section>
+    <!-- end s-home -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id='about' class="s-about">
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Get to know me</h3>
+                <h1 class="display-1">I am a driven music enthusiast ready for her first job in the real world.</h1>
+            </div>
+        </div>
+        
+        <!-- end section-header -->
+
+        <div class="row" data-aos="fade-up">
+            <div class="col-full">
+                <p class="lead">
+                    I obtained my bachelor's degree in communication studies in 2016 and I am currently in my final year of graphic design also at Artevelde UC in Ghent.
+               I've already gained some experience by working as a summer employee at various firms, amongst which a graphic design agency and 
+               one of the top media companies in Belgium. I did my communications internship at the AB in Brussels and am currently
+               an intern at Plant a Flag in Brussels, a creative marketing agency.
+                </p>
+              <!--  <a href="" target="_blank"><button class="buttonsubmit" type="submit"><span>Download resume</span></button></a>-->
+            </div>
+        </div>
+    
+        <!-- end about-desc -->
+        <div id="resume" class="row" data-aos="fade-up">
+                <div class="col-six tab-full">
+    
+                          
+                        <h2 class="h1">Skills</h2>
+                        
+                        <ul class="skill-bars" id="skill-lijst">
+                            <li>
+                            <div class="percentage-container"><div class="percentage" id="ill"></div>
+                            <strong>Illustrator</strong>
+                            </li>
+                            <li>
+                                    <div class="percentage-container"><div class="percentage" id="ind"></div>
+                                    <strong>InDesign</strong>
+                                    </li>
+                                    <li>
+                                            <div class="percentage-container"><div class="percentage" id="ps"></div>
+                                            <strong>Photoshop</strong>
+                                            </li>
+                                            <li>
+                                                    <div class="percentage-container"><div class="percentage" id="html"></div>
+                                                    <strong>HTML/CSS3</strong>
+                                                    </li>
+                                                    <li>
+                                                            <div class="percentage-container"><div class="percentage" id="js"></div>
+                                                            <strong>JavaScript</strong>
+                                                            </li>
+                            
+                        </ul></div>
+                        <div class="col-six tab-full">
+    
+                          
+                                <h2 class="h1">Languages</h2>
+                                
+                                <ul class="skill-bars" id="skill-lijst">
+                                    <li>
+                                    <div class="percentage-container"><div class="percentage" id="dutch"></div>
+                                    <strong>Dutch</strong>
+                                    </li>
+                                    <li>
+                                            <div class="percentage-container"><div class="percentage" id="eng"></div>
+                                            <strong>English</strong>
+                                            </li>
+                                            <li>
+                                                    <div class="percentage-container"><div class="percentage" id="fr"></div>
+                                                    <strong>French</strong>
+                                                    </li>
+                                                    <li>
+                                                            <div class="percentage-container"><div class="percentage" id="ger"></div>
+                                                            <strong>German</strong>
+                                                            </li>
+                                                           
+                                    
+                                </ul></div>
+        <div class="testimonials-wrap" data-aos="fade-up">
+
+                <div class="row">
+                    <div class="col-full testimonials-header">
+                        <h2 class="h1">Work experience</h2>
+                    </div>
+                    
+                </div>
+    
+                <div class="row testimonials">
+    
+                    <div class="col-full testimonials__slider">
+    
+                        <div class="testimonials__slide">
+                                <div class="testimonials__author">
+                                        <span>April - June 2018</span>
+                                        Plant a Flag
+                                        <span class="afdeling">Intern, Graphic Design</span>
+                                    </div>
+                            <img src="images/avatars/PlantAFlag.svg" alt="Author image" class="testimonials__avatar">
+                            <p>Design ads, banners, magazine spreads, newsletters, social media visuals and many other cool things.</p>
+                            
+                        </div>
+                        <!-- end testimonials__slide -->
+
+                        <div class="testimonials__slide">
+                                <div class="testimonials__author">
+                                        <span>August 2017, August 2016</span>
+                                        MEDIALAAN
+                                        <span class="afdeling">Summer Employee, Online communication TV</span>
+                                    </div>
+                            <img src="images/avatars/Medialaan_BM.svg" alt="Author image" class="testimonials__avatar">
+                            <p>Write and schedule website content and social media posts
+                                for TV channels VTM, Q2, At The Festivals, VTMKzoom and VTM Koken.</p>
+                            
+                        </div>
+                        <!-- end testimonials__slide -->
+                        <div class="testimonials__slide">
+                                <div class="testimonials__author">
+                                        <span>July 2017</span>
+                                        Studio Tornado
+                                        <span class="afdeling">Summer Employee, Graphic Design</span>
+                                    </div>
+                            <img src="images/avatars/StudioTornado.svg" alt="Author image" class="testimonials__avatar">
+                            <p>Designs for various clients ranging from stationary, ads and annual reports to social media visuals, websites and leaflets.</p>
+                            
+                        </div>
+                        <!-- end testimonials__slide -->
+                        <div class="testimonials__slide">
+                                <div class="testimonials__author">
+                                        <span>July 2016</span>
+                                        TVH Parts nv.
+                                        <span class="afdeling">Summer Employee, Marketing Research</span>
+                                    </div>
+                            <img src="images/avatars/TVH.svg" alt="Author image" class="testimonials__avatar">
+                            <p>Extensive marketing research for the MRO department, including a detailed competitor's analysis and advice on how
+                                to kickstart the new webshop.
+                            </p>
+                            
+                        </div>
+                        <!-- end testimonials__slide -->
+                        <div class="testimonials__slide">
+                                <div class="testimonials__author">
+                                        <span>April - June 2016</span>
+                                        Ancienne Belgique
+                                        <span class="afdeling">Intern, Promo/Communication</span>
+                                    </div>
+                            <img src="images/avatars/AB.svg" alt="Author image" class="testimonials__avatar">
+                            <p>Think of campaigns to elevate the number of ticket sales for specific concerts,
+                                write and publish blog posts, create social media content, send out mailings and help
+                                in the day to day life at a concert venue.
+                            </p>
+                            
+                        </div>
+                        <!-- end testimonials__slide -->
+                        <div class="testimonials__slide">
+                                <div class="testimonials__author">
+                                        <span>July / August 2011 - 2016</span>
+                                        TVH Parts nv.
+                                        <span class="afdeling">Summer Employee, Administrative work</span>
+                                    </div>
+                            <img src="images/avatars/TVH.svg" alt="Author image" class="testimonials__avatar">
+                            <p>Administrative work. Contact suppliers,
+                                update system SDS for the chemical product range and hande internal sticker orders (company wide scale).
+                            </p>
+                            
+                        </div>
+                        <!-- end testimonials__slide -->
+    
+                    </div>
+                    <!-- end testimonials__slider -->
+    
+                </div>
+                <!-- end testimonials -->
+    
+            </div>
+            <!-- end testimonials-wrap -->
+            
+
+        </div>
+
+        <div class="testimonials-wrap" data-aos="fade-up">
+
+                <div class="row">
+                    <div class="col-full testimonials-header">
+                        <h2 class="h1">Education</h2>
+                    </div>
+                    
+                </div>
+    
+                <div class="row testimonials">
+    
+                    <div class="col-full testimonials__slider">
+    
+                       
+
+                        <div class="testimonials__slide">
+                                <div class="testimonials__author">
+                                        <span>2013 - 2016</span>
+                                        Bachelor in communications management
+                                        <span class="afdeling">Artevelde University College, Ghent</span>
+                                    </div>
+                            <img src="images/avatars/Artevelde.svg" alt="Author image" class="testimonials__avatar">
+                            <p>Monitor, plan, implement and revise the different ways an organisation communicates with its employees,
+                                customers, the government, other organisations and other important parties. Develop corporate communication strategies
+                                and manage the general flow of information within the organisation. I mainly focus on creative writing,
+                                internal communication, content management and online communication, 
+                                but I am also capable of account management, public relations, spokespersonship and other aspects of
+                            communcation.</p>
+                            
+                        </div>
+                        <!-- end testimonials__slide -->
+
+                        <div class="testimonials__slide">
+                                <div class="testimonials__author">
+                                        <span>2016 - 2018</span>
+                                        Bachelor in graphical and digital media
+                                        <span class="afdeling">Artevelde University College, Ghent</span>
+                                    </div>
+                            <img src="images/avatars/Artevelde.svg" alt="Author image" class="testimonials__avatar">
+                            <p>"The art and practice of planning and projecting ideas and experiences with visual and textual content."
+                            In addition to my Bachelor's degree in commmunications management, I decided to take two extra years of
+                                graphic design classes. That way I can not only come up with strong campaigns content-wise, but also
+                                make sure they are visually attractive using the right typography, illustrations, lay-out and (own) photography. 
+                                I specialise in digital and online media, app and website designs, but offline media knows no secrets for me.
+                                I thereby know all the technical aspects of getting designs ready for print, ways to lift up the quality of a design
+                                and other ways of delivering "the final touch" to make a design stand out from its competitors.
+                            </p>
+                        </div>
+                        <!-- end testimonials__slide -->
+                        
+                     
+    
+                    </div>
+                    <!-- end testimonials__slider -->
+    
+                </div>
+                <!-- end testimonials -->
+    
+            </div>
+            <!-- end testimonials-wrap -->
+            
+
+        </div>
+            
+    
+               
+
+
+                 
+    
+            </div> <!-- end row -->
+        
+        </div>
+        <!-- end about-stats -->
+    </section>
+    <!-- end s-about -->
+
+
+    <!-- services
+    ================================================== -->
+    <section id='services' class="s-services">
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Skills</h3>
+                <h1 class="display-1 display-1--light">I have a wide range of useful skills <br>
+                    at your disposal to make your next 
+                    project an absolute success.</h1>
+            </div>
+        </div>
+        <!-- end section-header -->
+
+                      <div class="row" data-aos="fade-up">
+            <div class="col-full">
+                <p class="lead">
+                    Throughout my education, I collected a lot of useful skills ready to be deployed in the real world. Want to know more?
+                    Make sure you get in <a href="#contact">touch</a>!
+                </p>
+            </div>
+        </div>
+        <!-- end about-desc -->
+
+        <div class="row services-list block-1-3 block-m-1-2 block-tab-full">
+
+            <div class="col-block service-item " data-aos="fade-up">
+                <div class="service-icon">
+                    <img class=" service-icon-icon" src="assets/icons/Writing.svg" alt="Writing Skills">
+                </div>
+                <div class="service-text">
+                    <h3>Copywriting</h3>
+                    <p>Thanks to my experience as junior editor at concertnews and a creative writing class, I developed even better
+                        writing skills. I love languages and using them in a unique way. I will make your text stand out.
+                    </p>
+                </div>
+            </div>
+            <div class="col-block service-item" data-aos="fade-up">
+                    <div class="service-icon service-icon--product-strategy">
+                            <img class=" service-icon-icon" src="assets/icons/online.svg" alt="Online communication">
+                    </div>
+                    <div class="service-text">
+                        <h3>Online communication</h3>
+                        <p>I practically breathe web content and strategies for social media such as Twitter, Facebook and Instagram.
+                            My main focus in my communication education was on social media and online strategies. I would love
+                            to further develop those skills and gain even more insights!
+                        </p>
+                    </div>
+                </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon  service-icon-icon">
+                    <img class=" service-icon-icon" src="assets/icons/PC.svg" alt="Writing Skills">
+                </div>
+                <div class="service-text">
+                    <h3>Graphic design</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est.
+                        Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas
+                        ipsa in tempora esse soluta sint.
+                    </p>
+                </div>
+            </div>
+
+            
+
+        </div>
+        <!-- end services-list -->
+
+    </section>
+    <!-- end s-services -->
+
+
+    <!-- works
+    ================================================== -->
+    <section id='portfolio' class="s-works">
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">My portfolio</h3>
+                <h1 class="display-1">Check out some of my recent work.
+                </h1>
+                <p class="lead">These are some of the works I made whilst at Artevelde UC. Don't let the limited number scare you though.
+                        I am up for new challenges and I am eager to get started.</p>
+            </div>
+        </div>
+        <!-- end section-header -->
+
+        <div class="row masonry-wrap">
+            <div class="masonry">
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/paperfolds.jpg" class="thumb-link" title="Paperfolds" data-size="1050x700">
+                                <img src="images/portfolio/paperfolds.jpg" srcset="images/portfolio/paperfolds.jpg 1x, images/portfolio/paperfolds.jpg 2x" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Paperfolds
+                            </h3>
+                            <p class="item-folio__cat">
+                                Origami Manual
+                            </p>
+                        </div>
+
+                        <a href="https://www.yvx.be/paperfolds" class="item-folio__project-link" title="Read more">
+                            Let's fold this sh**
+                        </a>
+
+                        <div class="item-folio__caption">
+                            <p>Our very first assignment for the Photo Design class; design a manual for an origami figure.
+                                Includes my own photography and illustrations.
+                            </p>
+                        </div>
+
+                    </div>
+                    <!-- end item-folio -->
+                </div>
+                <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/rrfff.jpg" class="thumb-link" title="RRFFF" data-size="1050x700">
+                                <img src="images/portfolio/rrfff.jpg" srcset="images/portfolio/rrfff.jpg, images/portfolio/rrfff.jpg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Razor Reel Flanders Film Festival
+                            </h3>
+                            <p class="item-folio__cat">
+                                Poster design
+                            </p>
+                        </div>
+
+                        <a href="https://www.behance.net/" class="item-folio__project-link" title="Are you curious yet?">
+                            Are you curious yet?
+                        </a>
+
+                        <span class="item-folio__caption">
+                            <p>Second ever Photo Design assignment. Design a poster for the horror/fantasy film festival Razor Reel in Bruges.
+                                Make sure to incorporate a reference to the city's legendary swan (the Legend of the Bruges swans).
+                            </p>
+                        </span>
+
+                    </div>
+                    <!-- end item-folio -->
+                </div>
+                <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/Rexona.jpg" class="thumb-link" title="Rexona" data-size="1050x700">
+                                <img src="images/portfolio/Rexona.jpg" srcset="images/portfolio/Rexona.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Rexona
+                            </h3>
+                            <p class="item-folio__cat">
+                                Branding
+                            </p>
+                        </div>
+
+                        <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                            Confident creativity
+                        </a>
+
+                        <span class="item-folio__caption">
+                            <p>Rebranding for Rexona. I decided to focus on creative types just like me.</p>
+                        </span>
+
+                    </div>
+                    <!-- end item-folio -->
+                </div>
+                <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/mysmallapp.jpg" class="thumb-link" title="Liberty" data-size="1050x700">
+                                <img src="images/portfolio/mysmallapp.jpg" srcset="images/portfolio/mysmallapp.jpg 1x, images/portfolio/mysmallapp.jpg 2x" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                MEET-IX
+                            </h3>
+                            <p class="item-folio__cat">
+                                Web Design
+                            </p>
+                        </div>
+
+                        <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                            Wanna be my gig buddy?
+                        </a>
+
+                        <span class="item-folio__caption">
+                            <p>I love going to concerts and meeting new people. I also like when it's easy and user friendly
+                                to buy tickets or sell them if I can't make it. That's why I made an app combining those things.
+                                Think Facebook events, but much more useful and made from the perspective of the passionate gig goer.
+                            </p>
+                        </span>
+
+                    </div>
+                    <!-- end item-folio -->
+                </div>
+                <!-- end masonry__brick -->
+
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/bap.jpg" class="thumb-link" title="Fuji" data-size="1050x700">
+                                <img src="images/portfolio/bap.jpg" srcset="images/portfolio/bap.jpg 1x, images/portfolio/bap.jpg 2x" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Gaverke / College Waregem
+                            </h3>
+                            <p class="item-folio__cat">
+                               Rebranding
+                            </p>
+                        </div>
+
+                        <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                            A new look
+                        </a>
+
+                        <span class="item-folio__caption">
+                            <p>For my bachelor's assignment, I made a new logo for my local elementary school.</p>
+                        </span>
+
+                    </div>
+                    <!-- end item-folio -->
+                </div>
+                <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/zola.jpg" class="thumb-link" title="Zola" data-size="1050x700">
+                                <img src="images/portfolio/zola.jpg" srcset="images/portfolio/zola.jpg 1x, images/portfolio/zola.jpg 2x"
+                                    alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Zola Chocolate
+                            </h3>
+                            <p class="item-folio__cat">
+                                Branding
+                            </p>
+                        </div>
+
+                        <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                            Project Link
+                        </a>
+
+                        <span class="item-folio__caption">
+                            <p>Lactose free chocolate brand for children. Full concept and branding created by me. Fun fact: Zola is also the name of my cat.</p>
+                        </span>
+
+                    </div>
+                    <!-- end item-folio -->
+                </div>
+                <!-- end masonry__brick -->
+
+            </div>
+            <!-- end masonry -->                       <!-- <button class="buttonsubmit" type="submit"><span>Download portfolio april 2018</span></button>-->
+
+        </div>
+        <!-- end masonry-wrap -->
+
+     
+
+    </section>
+    <!-- end s-works -->
+
+
+    <!-- stats
+    ================================================== 
+    <section id="stats" class="s-stats">
+
+        <div class="row stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
+
+            <div class="col-block stats__col ">
+                <div class="stats__count">129</div>
+                <h5>Awards Received</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">1507</div>
+                <h5>Cups of Coffee</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">108</div>
+                <h5>Projects Completed</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">103</div>
+                <h5>Happy Clients</h5>
+            </div>
+
+        </div>
+        end stats -->
+
+    </section>
+    <!-- end s-stats -->
+
+
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact">
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead subhead--light">Contact me</h3>
+                <h1 class="display-1 display-1--light">Let's make waves together.</h1>
+            </div>
+        </div>
+        <!-- end section-header -->
+
+        <div class="row">
+                <div class="row">
+                        <div class="col-full" data-aos="fade-up">
+                            <form method="POST" action="https://formspree.io/ynevdm@gmail.com" id="contactform">
+                               
+                                    
+                                                                            <div class="control-group form-group">
+                                            <input type="email" class="form-control" name="email" required placeholder="What's your e-mail address?">
+                                        </div>
+                                   
+                                    
+        
+                                  
+                                   
+                                        <div class="control-group form-group">
+                                            <textarea name="message" class="form-control" required placeholder="Let's hear your ideas."></textarea>
+                                        </div>
+                                   
+                                  
+                                   
+                                  <button class="buttonsubmit" type="submit"><span>Ready for take off</span></button>
+                                   
+                                
+                                
+                            </form>
+        
+        
+                        </div>
+        
+                    </div>
+
+            <div class="col-full contact-main display-1--light" data-aos="fade-up">
+                <p>
+                    <a href="mailto:ynevdm@gmail.com" class="contact-email geel">ynevdm@gmail.com</a>
+                    <span class="contact-number">+32 (0) 470 36 89 42</span>
+                </p>
+            </div>
+            <!-- end contact-main -->
+
+        </div>
+        <!-- end row -->
+
+        <div class="row">
+
+            <div class="col-five tab-full contact-secondary" >
+                <h3 class="subhead subhead--light">Ways to reach me</h3>
+
+                <p class="contact-address">
+                    <a href="mailto:ynevdm@gmail.com">ynevdm@gmail.com</a>
+                    <br>
+                    +32 (0) 470 36 89 42
+
+                </p>
+            </div>
+            <!-- end contact-secondary -->
+
+            <div class="col-five tab-full contact-secondary" >
+                <h3 class="subhead subhead--light">Follow me</h3>
+
+                <ul class="contact-social">
+                    <li>
+                        <a href="https://www.facebook.com/yvx.be">
+                            <i class="icons fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/yvx_be">
+                            <i class="icons fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.behance.net/yvx_be">
+                            <i class="icons fab fa-behance"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://dribbble.com/yvx_be">
+                            <i class="icons fab fa-dribbble"></i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- end contact-social -->
+
+                
+            </div>
+            <!-- end contact-secondary -->
+
+        </div>
+        <!-- end row -->
+
+        <div class="row">
+            <div class="col-full cl-copyright">
+                <span>
+                   
+                </span>
+            </div>
+        </div>
+
+        <div class="cl-go-top">
+            <a class="smoothscroll" title="Scroll up!" href="#top">
+                <i class="icon-arrow-up" aria-hidden="true"></i>
+            </a>
+        </div>
+
+    </section>
+    <!-- end s-contact -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- end photoSwipe background -->
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+        </div>
+    </div>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
+
 </html>

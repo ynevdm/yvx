@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 750 750" style="enable-background:new 0 0 750 750;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FCE644;stroke-width:10;stroke-linecap:round;stroke-miterlimit:10;}
+	.st1{stroke:#FCE644;stroke-width:10;stroke-linecap:round;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#FCE644;stroke-width:8.9892;stroke-linecap:round;stroke-miterlimit:10;}
+	.st3{fill:#FCE644;}
+</style>
+<circle cx="375" cy="375" r="340"/>
+<g>
+	<path class="st0" d="M1203.3-123.1c0,0,89.3-102,134-86.7"/>
+	<path class="st1" d="M1046.6,128.9c0,0-12-26.7,35.3-77.3c47.3-50.7,260.7-262.7,260.7-262.7s32-26.7,52.7-7.3
+		c20.7,19.3,20.7,38.7,4,58.7S1124,99.6,1124,99.6S1076.6,141.5,1046.6,128.9z"/>
+	<path class="st0" d="M1386.3-223.1c0,0,27.3-33.3,42-26c14.7,7.3,10.7,28.7-16,47.3C1412.3-201.8,1399.6-217.1,1386.3-223.1z"/>
+	<line class="st0" x1="1235.3" y1="-104.5" x2="1285.3" y2="-57.1"/>
+	<line class="st0" x1="1077.3" y1="56.2" x2="1121.3" y2="98.9"/>
+	<line class="st0" x1="1045.3" y1="128.2" x2="1037.3" y2="136.2"/>
+</g>
+<g id="Expanded">
+	<g>
+		<g>
+			<path d="M-379.7,580.1h-258.8V418.3h258.8V580.1z M-622.3,563.9h226.4V434.5h-226.4V563.9z"/>
+		</g>
+		<g>
+			<path d="M-434,693.3h-150.1l12.1-48.5h125.8L-434,693.3z M-563.4,677.1h108.7l-4-16.2h-100.6L-563.4,677.1z"/>
+		</g>
+		<g>
+			<path d="M-347.3,758h-323.5c-17.8,0-32.3-14.5-32.3-32.3l0.3-10.3l32-112.1v-185c0-17.8,14.5-32.3,32.3-32.3h258.8
+				c17.8,0,32.3,14.5,32.3,32.3v176.9l32.3,122.4v8.1C-315,743.5-329.5,758-347.3,758z M-687,718.7v7c0,8.9,7.3,16.2,16.2,16.2
+				h323.5c8.9,0,16.2-7.3,16.2-16.2v-7l-32.3-122.4v-178c0-8.9-7.3-16.2-16.2-16.2h-258.8c-8.9,0-16.2,7.3-16.2,16.2l-0.3,188.2
+				L-687,718.7z"/>
+		</g>
+		<g>
+			<rect x="-662.7" y="596.3" width="307.3" height="16.2"/>
+		</g>
+		<g>
+			<rect x="-695.1" y="709.5" width="372" height="16.2"/>
+		</g>
+	</g>
+</g>
+<g>
+	<path class="st2" d="M579.6,353.5c0,113-91.6,204.6-204.6,204.6c-62.8,0-203.6-0.9-203.6-0.9s-1-153.4-1-203.6
+		c0-113,91.6-204.6,204.6-204.6S579.6,240.5,579.6,353.5z"/>
+	<g>
+		<circle class="st3" cx="251.5" cy="401.9" r="22.9"/>
+		<circle class="st3" cx="372.1" cy="401.9" r="22.9"/>
+		<circle class="st3" cx="492.6" cy="401.9" r="22.9"/>
+	</g>
+</g>
+</svg>
